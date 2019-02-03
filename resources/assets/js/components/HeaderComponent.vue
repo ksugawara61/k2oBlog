@@ -9,9 +9,13 @@
     </div>
     <nav class="global-navi">
       <ul>
-        <li class="current"><a href="home">ホーム</a></li>
-			  <li><a href="services">サービス</a></li>
-			  <li><a href="tools">ツール</a></li>
+        <li
+        v-for="page in pages"
+        v-bind:key="page.path"
+        v-bind:class="{'current': currentPage === page.path}"
+        >
+        <a href="page.path">{{ page.name }}</a>
+        </li>
   		</ul>
 	  </nav>
   </header>
@@ -23,6 +27,25 @@ export default {
     currentPage: {
       type: String,
       required: true
+    }
+  },
+
+  data: function() {
+    return {
+      pages: [
+        {
+          path: "home",
+          name: "ホーム"
+        },
+        {
+          path: "service",
+          name: "サービス"
+        },
+        {
+          path: "tool",
+          name: "ツール"
+        }
+      ]
     }
   },
 

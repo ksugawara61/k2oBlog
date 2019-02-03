@@ -14,7 +14,7 @@ class HomeController extends Controller
         $params = [
             'title' => 'home'
         ];
-        
+
         return view('home', $params);
     }
 }

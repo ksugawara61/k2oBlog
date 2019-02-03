@@ -43414,6 +43414,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: {
@@ -43421,6 +43425,21 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
       type: String,
       required: true
     }
+  },
+
+  data: function data() {
+    return {
+      pages: [{
+        path: "home",
+        name: "ホーム"
+      }, {
+        path: "service",
+        name: "サービス"
+      }, {
+        path: "tool",
+        name: "ツール"
+      }]
+    };
   },
 
   mounted: function mounted() {
@@ -43437,44 +43456,51 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("header", { attrs: { id: "page-header" } }, [
+    _vm._m(0),
+    _vm._v(" "),
+    _c("nav", { staticClass: "global-navi" }, [
+      _c(
+        "ul",
+        _vm._l(_vm.pages, function(page) {
+          return _c(
+            "li",
+            {
+              key: page.path,
+              class: { current: _vm.currentPage === page.path }
+            },
+            [
+              _c("a", { attrs: { href: "page.path" } }, [
+                _vm._v(_vm._s(page.name))
+              ])
+            ]
+          )
+        }),
+        0
+      )
+    ])
+  ])
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("header", { attrs: { id: "page-header" } }, [
-      _c("div", { attrs: { id: "header-visual" } }, [
-        _c("div", { staticClass: "visual-text" }, [
-          _c("h1", { attrs: { id: "site-title" } }, [_vm._v("K2O Blog")]),
-          _vm._v(" "),
-          _c("p", { attrs: { id: "catchcopy" } }, [
-            _vm._v("自分を破壊する一歩手前の負荷が、自分を強くしてくれる。")
-          ])
-        ]),
+    return _c("div", { attrs: { id: "header-visual" } }, [
+      _c("div", { staticClass: "visual-text" }, [
+        _c("h1", { attrs: { id: "site-title" } }, [_vm._v("K2O Blog")]),
         _vm._v(" "),
-        _c("img", {
-          attrs: {
-            src: "https://wondertrip.jp/img/p/pixta_4702603_M.jpg",
-            alt: ""
-          }
-        })
+        _c("p", { attrs: { id: "catchcopy" } }, [
+          _vm._v("自分を破壊する一歩手前の負荷が、自分を強くしてくれる。")
+        ])
       ]),
       _vm._v(" "),
-      _c("nav", { staticClass: "global-navi" }, [
-        _c("ul", [
-          _c("li", { staticClass: "current" }, [
-            _c("a", { attrs: { href: "home" } }, [_vm._v("ホーム")])
-          ]),
-          _vm._v(" "),
-          _c("li", [
-            _c("a", { attrs: { href: "services" } }, [_vm._v("サービス")])
-          ]),
-          _vm._v(" "),
-          _c("li", [_c("a", { attrs: { href: "tools" } }, [_vm._v("ツール")])])
-        ])
-      ])
+      _c("img", {
+        attrs: {
+          src: "https://wondertrip.jp/img/p/pixta_4702603_M.jpg",
+          alt: ""
+        }
+      })
     ])
   }
 ]
