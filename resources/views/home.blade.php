@@ -7,10 +7,13 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>Home</title>
     <link href="{{ mix('css/app.css') }}" rel="stylesheet" type="text/css">
+    <link href="/css/styles.css" rel="stylesheet" type="text/css">
 </head>
 <body>
     <div id="app">
+        <header-component></header-component>
         <home-component></home-component>
+        <footer-component></footer-component>
     </div>
     <script src="{{ mix('js/app.js') }}"></script>
 </body>

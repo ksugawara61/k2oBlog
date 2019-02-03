@@ -15,6 +15,15 @@ window.Vue = require('vue');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
+/**
+ * Site Component
+ */
+Vue.component('header-component', require('./components/HeaderComponent.vue'));
+Vue.component('footer-component', require('./components/FooterComponent.vue'));
+
+/**
+ * Site Body
+ */
 Vue.component('home-component', require('./components/HomeComponent.vue'));
 
 const app = new Vue({
