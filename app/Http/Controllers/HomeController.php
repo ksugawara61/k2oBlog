@@ -11,6 +11,10 @@ class HomeController extends Controller
     }
 
     public function index(Request $reqeust) {
-        return view('home');
+        $params = [
+            'title' => 'home'
+        ];
+        
+        return view('home', $params);
     }
 }

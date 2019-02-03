@@ -19,8 +19,16 @@
 
 <script>
 export default {
+  props: {
+    currentPage: {
+      type: String,
+      required: true
+    }
+  },
+
   mounted() {
     console.log('Component mounted.')
+    console.log(this.currentPage)
   }
 }
 </script>

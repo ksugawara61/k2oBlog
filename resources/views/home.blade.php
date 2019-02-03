@@ -5,13 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>Home</title>
+    <title>{{ $title }}</title>
     <link href="{{ mix('css/app.css') }}" rel="stylesheet" type="text/css">
-    <link href="/css/styles.css" rel="stylesheet" type="text/css">
 </head>
 <body>
     <div id="app">
-        <header-component></header-component>
+        <header-component current-page="{{ $title }}"></header-component>
         <home-component></home-component>
         <footer-component></footer-component>
     </div>
