@@ -14,7 +14,7 @@
         v-bind:key="page.path"
         v-bind:class="{'current': currentPage === page.path}"
         >
-        <a href="page.path">{{ page.name }}</a>
+        <a v-bind:href="page.path">{{ page.name }}</a>
         </li>
   		</ul>
 	  </nav>

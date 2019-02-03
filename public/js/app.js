@@ -43470,7 +43470,7 @@ var render = function() {
               class: { current: _vm.currentPage === page.path }
             },
             [
-              _c("a", { attrs: { href: "page.path" } }, [
+              _c("a", { attrs: { href: page.path } }, [
                 _vm._v(_vm._s(page.name))
               ])
             ]
