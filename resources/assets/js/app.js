@@ -24,7 +24,9 @@ Vue.component('footer-component', require('./components/FooterComponent.vue'));
 /**
  * Site Body
  */
-Vue.component('home-component', require('./components/HomeComponent.vue'));
+Vue.component('home-component',    require('./components/HomeComponent.vue'));
+Vue.component('service-component', require('./components/ServiceComponent.vue'));
+Vue.component('tool-component',    require('./components/ToolComponent.vue'));
 
 const app = new Vue({
     el: '#app'

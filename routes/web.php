@@ -11,5 +11,7 @@
 |
 */
 
-Route::get('/',    'HomeController@index');
-Route::get('home', 'HomeController@index');
+Route::get('/',       'HomeController@index');
+Route::get('home',    'HomeController@index');
+Route::get('service', 'ServiceController@index');
+Route::get('tool',    'ToolController@index');
