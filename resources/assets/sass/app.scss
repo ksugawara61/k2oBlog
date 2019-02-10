@@ -105,3 +105,126 @@ a {
 #page-header .global-navi ul li.current a {
 	background-color: #b3e5fc;
 }
+
+#page-main {
+	float: left;
+	width: 680px;	
+}
+
+.page-title {
+	margin: 15px 10px;
+	padding: 10px;
+	font-weight: bold;
+}
+
+.page-title h2 {
+	font-size: 24px;
+	font-weight: bold;
+	margin: 10px 0 10px;
+}
+
+.page-title:after {
+	content: "";
+	display: block;
+	height: 4px;
+	width: 100%;
+	background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
+}
+
+.topics ul {
+	list-style: none;
+	margin: 0 15px;
+	padding-left: 0;
+}
+
+.module-card {
+	background: #fff;
+    border: 1px solid #eee;
+	border-bottom: 2px solid #e4e2dc;
+	border-radius: 10px;
+    display: block;
+    margin: 0 0 10px;
+	padding: 15px 10px;
+}
+
+.module-card .card-ttl {
+	font-size: 19px;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #ccc;
+	line-height: 1.2;
+	padding: 0 0 10px;
+}
+
+.module-card .card-ttl-time {
+	color: #999;
+    display: block;
+    font-size: 12px;
+    line-height: 1.2;
+    margin-bottom: 8px;
+}
+
+.module-card .card-ttl a {
+	color: #000;
+}
+
+.module-card .card-ttl-title {
+	vertical-align: middle;
+}
+
+// card-body
+.module-card .card-body-thumb {
+	border: 1px solid #ccc;
+    display: inline-block;
+    float: left;
+    margin-right: 10px;
+    overflow: hidden;
+    text-align: center;
+    height: 7.5em;
+    width: 220px;
+    vertical-align: top;	
+}
+
+.module-card .card-body-abstract {
+	font-size: 16px;
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 3;
+}
+
+// more button
+.module-card .card-body-more {
+	display: block;
+	line-height: 1.2;
+	text-align: right;
+}
+
+a.btn-more {
+	background: #fff;
+    color: #006dd9;
+}
+
+a[class^="btn"] {
+	border-color: #006dd9;
+	border-radius: 5px;
+    border: 1px solid #006dd9;
+    display: inline-block;
+    font-size: 12px;
+    margin: 0.5em 0 0 0.25em;
+    padding: 7px 8px;
+    vertical-align: top;
+}
+
+.fa {
+	display: inline-block;
+	font-family: normal normal normal 14px/1 FontAwesome;
+	font-weight: 900;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.fa-chevron-right:before {
+	content: "\f054";
+}

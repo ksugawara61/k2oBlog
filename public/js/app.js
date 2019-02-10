@@ -43675,6 +43675,30 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
@@ -43697,10 +43721,53 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container" }, [
-      _c("div", { staticClass: "row" }, [
-        _c("div", { staticClass: "col-md-8 col-md-offset-2" }, [
-          _vm._v("\n      Hello World!\n    ")
+    return _c("div", { attrs: { id: "page-main" } }, [
+      _c("div", { staticClass: "page-title" }, [
+        _c("h2", [_vm._v("K2Oブログトップ")])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "topics" }, [
+        _c("ul", [
+          _c("li", { staticClass: "module-card" }, [
+            _c("div", { staticClass: "card-ttl" }, [
+              _c("span", { staticClass: "card-ttl-time" }, [
+                _c("time", { attrs: { datetime: "2019-02-10" } }, [
+                  _vm._v("2019年 2月 10日")
+                ])
+              ]),
+              _vm._v(" "),
+              _c("span", { staticClass: "card-ttl-title" }, [
+                _c("a", { attrs: { href: "https://guide.search.goo.ne.jp" } }, [
+                  _vm._v("K2Oブログを開設しました。")
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "card-body" }, [
+              _c("span", { staticClass: "card-body-thumb" }, [
+                _c("img", {
+                  attrs: {
+                    src:
+                      "https://guide.search.goo.ne.jp/wp-content/uploads/sp_tv-220x115.png",
+                    alt: "テレビ番組ダイレクト機能を追加しました"
+                  }
+                })
+              ]),
+              _vm._v(" "),
+              _c("p", { staticClass: "card-body-abstract" }, [
+                _vm._v(
+                  "\n            ここにテキストが入ります。テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト\n          "
+                )
+              ]),
+              _vm._v(" "),
+              _c("span", { staticClass: "card-body-more" }, [
+                _c("a", { staticClass: "btn-more", attrs: { href: "#" } }, [
+                  _c("i", { staticClass: "fa fa-chevron-right" }),
+                  _vm._v("\n              続きを読む\n            ")
+                ])
+              ])
+            ])
+          ])
         ])
       ])
     ])
