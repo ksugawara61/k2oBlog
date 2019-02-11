@@ -8431,6 +8431,17 @@ a {
   background-color: #b3e5fc;
 }
 
+#page {
+  width: 980px;
+}
+
+#page:after {
+  content: "";
+  clear: both;
+  display: block;
+  height: 0px;
+}
+
 #page-main {
   float: left;
   width: 680px;

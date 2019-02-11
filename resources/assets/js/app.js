@@ -18,8 +18,9 @@ window.Vue = require('vue');
 /**
  * Site Component
  */
-Vue.component('header-component', require('./components/HeaderComponent.vue'));
-Vue.component('footer-component', require('./components/FooterComponent.vue'));
+Vue.component('header-component',  require('./components/HeaderComponent.vue'));
+Vue.component('sidebar-component', require('./components/SidebarComponent.vue'))
+Vue.component('footer-component',  require('./components/FooterComponent.vue'));
 
 /**
  * Site Body

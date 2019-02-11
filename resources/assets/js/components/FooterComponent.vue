@@ -4,6 +4,15 @@
   </footer>
 </template>
 
+<style>
+#page-footer {
+  display: block;
+  width: 980px;
+  padding: 0 0 0 0;
+}
+</style>
+
+
 <script>
 export default {
   mounted() {

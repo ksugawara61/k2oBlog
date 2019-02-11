@@ -11,7 +11,10 @@
 <body>
     <div id="app">
         <header-component current-page="{{ $title }}"></header-component>
-        <home-component></home-component>
+        <div id="page">
+            <home-component></home-component>
+            <sidebar-component></sidebar-component>
+        </div>
         <footer-component></footer-component>
     </div>
     <script src="{{ mix('js/app.js') }}"></script>
