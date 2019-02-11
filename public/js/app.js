@@ -44071,6 +44071,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
@@ -44095,7 +44101,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("footer", { attrs: { id: "page-footer" } }, [
       _c("p", { attrs: { id: "copyright" } }, [
-        _c("small", [_vm._v("Copyright&copy; 2019 @k2o All Rights Reserved.")])
+        _c("small", [_vm._v("Copyright© 2019 @k2o All Rights Reserved.")])
       ])
     ])
   }
@@ -44535,7 +44541,7 @@ exports = module.exports = __webpack_require__(45)(false);
 
 
 // module
-exports.push([module.i, "\n#page-footer {\n  display: block;\n  width: 980px;\n  padding: 0 0 0 0;\n}\n", ""]);
+exports.push([module.i, "\n#page-footer {\n  display: block;\n  width: 980px;\n  padding: 0 0 0 0;\n  border-top: solid 1px #cccccc;\n  margin-top: 15px;\n}\n#copyright {\n  margin: 14px;\n}\n", ""]);
 
 // exports
 
